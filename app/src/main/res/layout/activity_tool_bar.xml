@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".previous.ui.activity.ToolBarActivity">
+    <!--
+        ?attr/actionBarSize:表示根据屏幕的分辨率采用系统默认的高度
+        如果低版本也要使用的话,则需要使用v7包的,否则只有api21上才能有效
+        -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+        <!--添加Toolbar的子控件-->
+        <Button
+            android:id="@+id/btn_diy"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="6dp"
+            android:background="#80ffffff"
+            android:text="自定义按钮"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <com.tuoyan.myapplication.previous.view.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="呵呵呵...呵呵呵..."
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <com.tuoyan.myapplication.previous.view.MyTextView
+        android:id="@+id/tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#030303"
+        android:gravity="top"
+        android:text="呵呵呵,这个可以有点击散就散阿娇大家摔手机审己度人思考思考世界顶级红酒世界卡卡的,低俗,是觉得思科.wid拉克鲁斯第三届垃圾as据了解啊三季度; 就看见as姐啊就是加拉时间."
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="true" />
+</LinearLayout>

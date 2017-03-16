@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".previous.ui.activity.Main2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_test_interface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test interface activity" />
+
+            <Button
+                android:id="@+id/btn_test_ok_http_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试OkGo(ok-http)的界面" />
+
+            <Button
+                android:id="@+id/btn_test_image_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test image picker activity" />
+
+            <Button
+                android:id="@+id/btn_test_pull_down_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test 下拉刷新" />
+
+            <Button
+                android:id="@+id/btn_test_pull_down_refresh2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test 下拉刷新...第二个界面" />
+
+            <Button
+                android:id="@+id/btn_test_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test ToolBar" />
+
+            <Button
+                android:id="@+id/btn_test_CoordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test CoordinatorLayout" />
+
+            <Button
+                android:id="@+id/btn_test_bitmap_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test BitMap上传" />
+
+            <Button
+                android:id="@+id/btn_test_foreground_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="启动/停止前台Service" />
+
+            <Button
+                android:id="@+id/btn_test_demo1_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试Demo1View" />
+
+            <Button
+                android:id="@+id/btn_test_retrofit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试RetrofitActivity" />
+
+            <Button
+                android:id="@+id/btn_test_retrofit_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试RetrofitActivity2" />
+
+            <Button
+                android:id="@+id/btn_test_mvp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试mvp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".previous.ui.activity.PullDownToRefresh2Activity">
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/rotate_header_list_view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#333333">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+</LinearLayout>

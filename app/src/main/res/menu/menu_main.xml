@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".previous.ui.activity.ToolBarActivity">
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ptr_rotate_arrow"
+        android:orderInCategory="80"
+        android:title="编辑"
+        app:showAsAction="ifRoom"
+        android:background="#66FFFFFF"/>
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ptr_rotate_arrow"
+        android:orderInCategory="90"
+        android:title="分享"
+        app:showAsAction="ifRoom"
+        android:background="#66FFFFFF"/>
+
+    <item
+        android:id="@+id/action_overflow"
+        android:icon="@drawable/ptr_rotate_arrow"
+        android:orderInCategory="100"
+        android:title="更多"
+        app:showAsAction="collapseActionView"
+        android:background="#66FFFFFF"/>
+</menu>

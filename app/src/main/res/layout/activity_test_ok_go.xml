@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    tools:context=".previous.ui.activity.test.TestOkGoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_request_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingBottom="10dp"
+                android:text="请求的json数据加载中....."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="学段" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="电话" />
+
+            <TextView
+                android:id="@+id/tv_version_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="版本号" />
+
+            <TextView
+                android:id="@+id/tv_ios_version"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="IOS版本" />
+
+            <TextView
+                android:id="@+id/tv_limit_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="限时" />
+
+            <TextView
+                android:id="@+id/tv_share_url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="分享地址" />
+
+            <TextView
+                android:id="@+id/tv_cych_url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="cychURL" />
+
+            <TextView
+                android:id="@+id/tv_pmqc_url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="pmqcURL" />
+
+            <TextView
+                android:id="@+id/tv_alipay_url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="alipayURL" />
+
+            <TextView
+                android:id="@+id/tv_activation_open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="activationOpen" />
+
+            <TextView
+                android:id="@+id/tv_listen_url"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="listenURL" />
+
+            <TextView
+                android:id="@+id/tv_apkurl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="apkurl" />
+
+            <TextView
+                android:id="@+id/tv_request_result2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="第二个请求的结果"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_request_result2_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:text="第二个请求,结果信息" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

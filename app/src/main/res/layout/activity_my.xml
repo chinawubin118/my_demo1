@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tuoyan.myapplication.mvp.ui.MyActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入用户ID....."
+            android:padding="10dp"
+            android:textColor="#88000000"
+            android:textColorHint="#44000000" />
+
+        <Button
+            android:id="@+id/btn_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入数据" />
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击查询" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="....." />
+</LinearLayout>

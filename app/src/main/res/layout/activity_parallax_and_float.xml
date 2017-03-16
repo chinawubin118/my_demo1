@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".previous.ui.activity.ParallaxAndFloatActivity">
+
+    <com.tuoyan.myapplication.previous.view.ParallaxAndFloatScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_top_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/image_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/gif_animation" />
+
+                        <ImageView
+                            android:id="@+id/iv_header"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <TextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_header"
+                            android:layout_centerHorizontal="true"
+                            android:padding="4dp"
+                            android:text="昵称"
+                            android:textColor="#333" />
+
+                        <TextView
+                            android:id="@+id/tv_user_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_user_name"
+                            android:layout_centerHorizontal="true"
+                            android:text="个性签名"
+                            android:textColor="#555"
+                            android:textSize="12sp" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_below="@+id/tv_user_sign"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/tab_visible"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Radio1"
+                    android:textColor="#EEE" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Radio2"
+                    android:textColor="#EEE" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Radio3"
+                    android:textColor="#EEE" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.tuoyan.myapplication.previous.view.ParallaxAndFloatScrollView>
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:alpha="0"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="我的主页"
+        android:textColor="#EEE"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/tab_gone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_header"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Radio1"
+            android:textColor="#EEE" />
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Radio2"
+            android:textColor="#EEE" />
+
+        <RadioButton
+            android:id="@+id/radio6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Radio3"
+            android:textColor="#EEE" />
+    </RadioGroup>
+</RelativeLayout>

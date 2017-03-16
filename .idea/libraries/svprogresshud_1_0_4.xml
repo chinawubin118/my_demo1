@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="svprogresshud-1.0.4">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.bigkoo/svprogresshud/1.0.4/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.bigkoo/svprogresshud/1.0.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bigkoo/svprogresshud/1.0.4/c2a96358678448bc8ae760328615c3335d3d12cd/svprogresshud-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

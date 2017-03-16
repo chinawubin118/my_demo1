@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asynchttp/asynchttp.iml" filepath="$PROJECT_DIR$/asynchttp/asynchttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/image_loader_lib/image_loader_lib.iml" filepath="$PROJECT_DIR$/image_loader_lib/image_loader_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/image_selector/image_selector.iml" filepath="$PROJECT_DIR$/image_selector/image_selector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lotte_library/lotte_library.iml" filepath="$PROJECT_DIR$/lotte_library/lotte_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my_demos_1.iml" filepath="$PROJECT_DIR$/my_demos_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my_test_app/my_test_app.iml" filepath="$PROJECT_DIR$/my_test_app/my_test_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoview_lib/photoview_lib.iml" filepath="$PROJECT_DIR$/photoview_lib/photoview_lib.iml" />
+    </modules>
+  </component>
+</project>

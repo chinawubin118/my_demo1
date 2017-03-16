@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tuoyan.myapplication">
+
+    <!-- 用于网络通信 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于存储已下载文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".previous.ui.activity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".previous.ui.activity.test.TestHomeAndTaskKeyActivity" />
+        <activity android:name=".previous.ui.activity.ImagePagerActivity" />
+        <activity android:name=".previous.ui.activity.test.TestImageSelectorActivity" />
+        <activity android:name=".previous.ui.activity.ParallaxAndFloatActivity" />
+        <activity android:name=".previous.ui.activity.Main2Activity" />
+        <activity android:name=".previous.ui.activity.TestInterfaceActivity" />
+        <activity android:name=".previous.ui.activity.test.TestImagePickerActivity" />
+        <activity android:name=".previous.utils.ImageCheckActivity" />
+        <activity android:name=".previous.ui.activity.test.TestOkGoActivity" />
+        <activity android:name=".previous.ui.activity.PullDownToRefreshActivity" />
+        <activity android:name=".previous.ui.activity.PullDownToRefresh2Activity" />
+        <activity android:name=".previous.ui.activity.ToolBarActivity" />
+        <activity android:name=".previous.ui.activity.test.TestBitmapActivity" />
+        <activity android:name=".previous.ui.activity.test.ForegroundServiceActivity" />
+
+        <service
+            android:name=".previous.service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".previous.ui.activity.test.TestDemo1ViewActivity" />
+        <activity android:name=".previous.ui.activity.RetrofitActivity" />
+        <activity android:name=".previous.ui.activity.Retrofit2Activity" />
+        <activity android:name=".previous.ui.activity.test.CoordinatorLayoutActivity" />
+        <activity android:name=".mvp_demo.view.View" />
+        <activity android:name=".mvp.ui.MyActivity"></activity>
+    </application>
+
+</manifest>

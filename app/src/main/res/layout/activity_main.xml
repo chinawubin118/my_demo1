@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context=".previous.ui.activity.MainActivity">
+
+    <Button
+        android:id="@+id/btn_show_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show an ad dialog!" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showWithProgress"
+        android:text="show With Progress" />
+
+    <Button
+        android:id="@+id/btn_test_key_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到测试Home和Task按键" />
+
+    <Button
+        android:id="@+id/btn_photo_check_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到图片查看器页面" />
+
+    <Button
+        android:id="@+id/btn_test_image_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用ImageSelector选择图片" />
+
+    <Button
+        android:id="@+id/to_parallax_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下拉视差/刷新/悬浮tab/加载更多" />
+
+    <Button
+        android:id="@+id/to_another_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开另外一个导航页" />
+
+    <com.tuoyan.myapplication.previous.view.GifImageView
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mmexport1468925290442"
+        app:auto_play="false" />
+</LinearLayout>

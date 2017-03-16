@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "com.tuoyan.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:25.1.0'
+    //广告弹窗
+    //Android-SVProgressHUD.....ProgressHUD
+    compile project(':image_loader_lib')
+    //imageSelector
+    compile project(':image_selector')
+    compile 'cn.yipianfengye.android:ad-library:1.0'
+    compile 'com.bigkoo:svprogresshud:1.0.4'
+    //自己封装的module
+    compile project(':lotte_library')
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'//okhttp3的logging-interceptor
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'//ConverterFactory的Gson依赖包
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'//ConverterFactory的String依赖包
+    compile 'io.reactivex:rxandroid:1.2.1'//rxandroid
+}
