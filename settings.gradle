@@ -1,0 +1,1 @@
+include ':app', ':photoview_lib', ':image_loader_lib', ':image_selector', ':asynchttp', ':lotte_library', ':my_test_app'
