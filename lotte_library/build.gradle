@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:support-v4:25.0.1'
+    //谷歌Gson框架
+    compile 'com.google.code.gson:gson:2.7'
+    //Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //网络框架,okGo(项目地址:https://github.com/jeasonlzy/okhttp-OkGo)
+    compile 'com.lzy.net:okgo:2.0.0'
+    //仿微信的图片选择器(项目地址:https://github.com/jeasonlzy/ImagePicker)总是使用.....最新版本
+    compile 'com.lzy.widget:imagepicker:+'
+    //外部依赖的本地Module,使用本项目的时候,需要同时拷贝photoview_lib这个Module同事使用
+    compile project(':photoview_lib')
+    //Android-Ultra-Pull-To-Refresh
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+}
